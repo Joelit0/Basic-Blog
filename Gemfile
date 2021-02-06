@@ -74,5 +74,5 @@ gem 'rexml'
 gem 'devise'
 
 # Heroku
-gem 'pg', '~> 0.20'
+gem 'pg'
 gem 'rails_12factor', group: :production
