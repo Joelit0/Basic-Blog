@@ -1,0 +1,13 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  
+  <%= f.label :content %>
+  <%= f.text_area :content %><br/>
+
+  <%= f.label :main_image %>
+  <%= f.file_field :main_image %><br/>
+
+  <%= f.submit "Save" %>
+
+<% end %>

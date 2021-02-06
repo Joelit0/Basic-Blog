@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "flash" + name) do %>
+        <%= msg %>
+      <% end %>
+    <% end %>
+
+    <% if admin_signed_in? %>
+      <%= link_to "Exit", destroy_admin_session_path %>
+    <% else %>
+      <%= link_to "Enter", new_admin_session_path %>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

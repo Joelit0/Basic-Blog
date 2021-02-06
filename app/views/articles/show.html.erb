@@ -1,0 +1,22 @@
+<h1> <%= @article.name %> </h1>
+
+<% if admin_signed_in? %>  
+  <%= link_to "Add image", new_article_image_path(@article) %><br/>
+  <%= link_to "Edit", edit_article_path(@article) %><br/>
+  <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %><br/>
+<% end %>
+
+<p> <%= @article.content %> </p>
+
+<% if @article.main_image %>
+  <%= image_tag  "data:image/jpeg;base64," + @article.main_image %>
+<% end %>
+
+<% @article.images.each do |image| %>
+  <%= image_tag "data:image/jpeg;base64," + image.image %> 
+  
+  <% if admin_signed_in? %>  
+    <%= link_to "Change image", edit_article_image_path(@article, image) %><br/>
+    <%= link_to "Delete image", article_image_path(@article, image), method: :delete, data: { confirm: "Are you sure?" } %><br/>
+  <% end %>
+<% end %>
