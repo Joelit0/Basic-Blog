@@ -4,7 +4,7 @@ The setups steps expect following tools installed on the system.
 
 - Github
 - Ruby [3.0.0](https://github.com/Joelit0/Blog-Udemy-Course/blob/master/.ruby-version#L4)
-- Rails [6.1.1](https://github.com/organization/project-name/blob/master/Gemfile#L7)
+- Rails [6.1.1](https://github.com/Joelit0/Blog-Udemy-Course/blob/master/Gemfile#L7)
 
 ##### 1. Check out the repository
 
