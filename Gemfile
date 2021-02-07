@@ -72,3 +72,7 @@ gem 'rexml'
 gem 'devise'
 
 gem 'pg', group: :production
+
+group :production do
+  gem 'rails_12factor'
+end
