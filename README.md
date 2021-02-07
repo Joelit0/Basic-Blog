@@ -29,7 +29,13 @@ bundle exec rake db:create
 bundle exec rake db:setup
 ```
 
-##### 4. Start the Rails server
+##### 4. Install Webpacker
+
+```ruby
+rails webpacker:install
+```
+
+##### 5. Start the Rails server
 
 You can start the rails server using the command given below.
 
