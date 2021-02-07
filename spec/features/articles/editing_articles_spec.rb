@@ -2,25 +2,17 @@ require 'rails_helper'
 
 RSpec.feature "Admins can edit articles" do
   before do
-    admin = Admin.create(
-      email: "admin@example.com",
-      name: "Super Admin",
-      password: "password123",
-      password_confirmation: "password123"
-    )
+    admin = create(:admin)
 
     visit "/admins/sign_in"
     fill_in "Email", with: admin.email
     fill_in "Password", with: admin.password
     click_button "Log in"
     
-    article_1 = Article.create(
-      name: "Reasons to learn Ruby on Rails",
-      content: "It's a great programming language"
-    )
+    article = create(:article)
 
     visit "/"
-    click_link article_1.name
+    click_link article.name
     click_link "Edit"
   end
   

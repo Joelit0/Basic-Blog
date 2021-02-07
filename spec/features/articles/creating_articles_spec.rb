@@ -2,12 +2,7 @@ require 'rails_helper'
 
 RSpec.feature "Admins can create Articles" do
   before do
-    admin = Admin.create(
-      email: "admin@example.com",
-      name: "Super Admin",
-      password: "password123",
-      password_confirmation: "password123"
-    )
+    admin = create(:admin)
 
     visit "/admins/sign_in"
     fill_in "Email", with: admin.email
@@ -21,7 +16,7 @@ RSpec.feature "Admins can create Articles" do
   scenario "With valids attributes" do
     fill_in "Name", with: "Reasons to learn Ruby on Rails"
     fill_in "Content", with: "It's a great programming language"
-    attach_file "Main image", "/Users/Joelito/Desktop/Cursos/Rails Udemy/blog/spec/images/rails.png"
+    attach_file "Main image", "/Users/Joelito/Desktop/Cursos/Rails Udemy/Blog-Udemy-Course/spec/images/rails.png"
 
     click_button "Save"
 
