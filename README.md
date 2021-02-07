@@ -1,4 +1,4 @@
-##### Prerequisites
+### Prerequisites
 
 The setups steps expect following tools installed on the system.
 
@@ -39,6 +39,6 @@ bundle exec rails s
 
 And now you can visit the site with the URL http://localhost:3000
 
-##### Production Enviroment
+### Production Enviroment
 
 You can also visit the blog in production at: http://blog-udemy-course.herokuapp.com
