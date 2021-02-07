@@ -75,4 +75,4 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'uglifier', '~> 2.7'
+gem 'uglifier', '>= 1.0.3'

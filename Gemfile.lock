@@ -267,7 +267,7 @@ DEPENDENCIES
   spring
   turbolinks (~> 5)
   tzinfo-data
-  uglifier (~> 2.7)
+  uglifier (>= 1.0.3)
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
