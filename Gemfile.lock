@@ -262,7 +262,7 @@ DEPENDENCIES
   rails_12factor
   rexml
   rspec-rails
-  sass-rails (>= 6)
+  sass-rails (>= 3.1.4)
   selenium-webdriver
   spring
   turbolinks (~> 5)
