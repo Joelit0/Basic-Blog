@@ -12,12 +12,12 @@ The setups steps expect following tools installed on the system.
 git clone git@github.com:Joelit0/Blog-Udemy-Course.git
 ```
 
-##### 2. Create database.yml file
+##### 2. Install gems
 
-Copy the sample database.yml file and edit the database configuration as required.
+Run the following command to install all gems required in the Gemfile.
 
-```bash
-cp config/database.yml.sample config/database.yml
+```ruby
+bundle install
 ```
 
 ##### 3. Create and setup the database
