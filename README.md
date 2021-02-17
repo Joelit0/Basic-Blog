@@ -9,7 +9,7 @@ The setups steps expect following tools installed on the system.
 ##### 1. Check out the repository
 
 ```bash
-git clone git@github.com:Joelit0/Blog-Udemy-Course.git && cd Blog-Udemy-Course
+git clone git@github.com:Joelit0/Basic-Blog.git && cd Basic-Blog
 ```
 
 ##### 2. Install gems
